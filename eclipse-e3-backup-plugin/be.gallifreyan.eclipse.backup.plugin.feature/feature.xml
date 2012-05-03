@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="be.gallifreyan.eclipse.backup.plugin.feature"
-      label="be.gallifreyan.eclipse.backup.plugin.feature"
-      version="1.0.0.qualifier">
+      label="be.gallifreyan.eclipse.backup.plugin"
+      version="1.0.0.qualifier"
+      provider-name="be.gallifreyan">
 
    <description url="http://www.example.com/description">
       [Enter Feature Description here.]
    </description>
 
-   <copyright url="http://www.apache.org/licenses/LICENSE-2.0.txt">
-   	[http://www.apache.org/licenses/LICENSE-2.0.txt]
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
    </copyright>
 
-   <license url="http://www.apache.org/licenses/LICENSE-2.0.txt">
-	[http://www.apache.org/licenses/LICENSE-2.0.txt]
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
    </license>
 
    <plugin

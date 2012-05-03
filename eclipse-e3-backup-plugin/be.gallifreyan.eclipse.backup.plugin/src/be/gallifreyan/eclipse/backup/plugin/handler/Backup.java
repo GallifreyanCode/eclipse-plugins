@@ -122,8 +122,11 @@ public class Backup extends AbstractHandler {
 	 */
 	private void createOnDropbox(IResource resource) {
 		File root = new File(System.getProperty("user.home") + "\\Dropbox");
+		File secundaryRoot = new File("D:\\Data\\Dropbox");
 		if (root.exists()) {
 			createOnCloud(resource, root);
+		} else if (secundaryRoot.exists()) {
+			createOnCloud(resource, secundaryRoot);
 		} else {
 			showErrorDialog("No Dropbox found.");
 		}
@@ -136,8 +139,11 @@ public class Backup extends AbstractHandler {
 	 */
 	private void createOnGDrive(IResource resource) {
 		File root = new File(System.getProperty("user.home") + "\\Google Drive");
+		File secundaryRoot = new File("D:\\Data\\Google Drive");
 		if (root.exists()) {
 			createOnCloud(resource, root);
+		} else if(secundaryRoot.exists()) {
+			createOnCloud(resource, secundaryRoot);
 		} else {
 			showErrorDialog("No Google Drive found.");
 		}
@@ -259,8 +265,8 @@ public class Backup extends AbstractHandler {
 	 * @param reason
 	 */
 	private void showErrorDialog(String reason) {
-		Status status = new Status(IStatus.ERROR, "be.gallifreyan.eclipse.backup.plugin", 0,
-				reason, null);
+		Status status = new Status(IStatus.ERROR,
+				"be.gallifreyan.eclipse.backup.plugin", 0, reason, null);
 		ErrorDialog.openError(promptPanel.getShell(), "Backup Plugin",
 				"Backup process failed", status);
 	}

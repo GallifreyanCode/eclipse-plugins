@@ -14,7 +14,7 @@ Although this is primarily an attempt to learn more about Eclipse plug-in develo
 
 ###Requirements
 
- * Eclipse 3.x (Not tested on 4.x)
+ * Eclipse 3.4 and beyond
  
  * Eclipse Plug-in Development Environment (Only if you want to import the code)
  
